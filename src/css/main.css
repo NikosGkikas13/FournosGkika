@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "BlackOps";
+  src: local("BlackOps"),
+    url(./../fonts/SairaStencilOne-Regular.ttf) format("truetype");
+}
+* {
+  font-family: BlackOps;
+}
+article h1 {
+  font-family: sans-serif;
+}
+#footer {
+  background-color: #000;
+  color: #cdbf7a;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+#footer a {
+  color: #cdbf7a;
+  text-decoration: none;
+}
+#footer h1 {
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.footerInfo {
+  display: flex;
+  margin: 5px;
+  border-bottom: 1px solid #cdbf7a;
+  padding-bottom: 6px;
+}
+.footerInfo h1:last-child {
+  padding-left: 10px;
+}
+.logo-footer {
+  width: 100px;
+}
+.footerInfo-div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}

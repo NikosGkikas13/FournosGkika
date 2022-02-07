@@ -1,0 +1,110 @@
+#contact-us {
+  background-image: url("./../images/globe.jpg");
+  background-repeat: no-repeat;
+  background-size: 1300px;
+  background-position: center;
+  height: 770px;
+}
+
+.contact-div {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 84px;
+  font-family: sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-div h1 {
+  color: #fff;
+  border-bottom: 1px solid #cdbf7a;
+  display: inline-flex;
+}
+.form-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+li * {
+  vertical-align: middle;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+li label {
+  color: #fff;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input {
+  height: 50px;
+}
+textarea {
+  height: 120px;
+  width: 250px;
+}
+input,
+textarea,
+#contact-us button {
+  border-radius: 12px;
+  margin: 7px;
+  border: none;
+}
+#contact-us button {
+  color: #fff;
+  padding: 10px;
+  width: 120px;
+  background: #cdbf7a;
+}
+#contact-us button:hover {
+  background: #9f9045;
+}
+.message-modal {
+  position: absolute;
+  right: 0;
+  left: 0;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 25px;
+  z-index: 10;
+}
+.message-modal h1 {
+  border: none;
+  font-weight: 100;
+  font-family: "Roboto";
+}
+.success-msg {
+  background: rgb(13, 187, 22);
+}
+.error-msg {
+  background: rgb(204, 19, 19);
+}
+@media screen and (max-width: 992px) {
+  #contact-us {
+    background-size: 1100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contact-us {
+    background-size: 800px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact-us {
+    background-size: 700px;
+  }
+  .contact-form {
+    margin-bottom: -45px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .form-div li input {
+    width: 130px;
+  }
+  .form-ul li textarea {
+    width: 180px;
+  }
+}

@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+nav {
+  background: #000;
+  padding: 20px;
+  color: #cdbf7a;
+}
+nav a {
+  color: #cdbf7a;
+  text-decoration: none;
+  margin: 20px;
+}
+.navbar-container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.firstPanel {
+  text-align: center;
+  background-image: url("../images/home-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 90vh;
+  margin-top: -67px;
+}
+
+.firstPanel h1 {
+  color: #cdbf7a;
+  font-size: 100px;
+  border-bottom: 2px solid #cdbf7a;
+  border-top: 2px solid;
+  background: rgb(0, 0, 0, 0.5);
+  position: relative;
+  top: 40%;
+  z-index: 10;
+}
+body {
+  margin: 0;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  right: 0;
+  left: 0;
+}
+.secondPanel {
+  margin-top: 20px;
+}
+.secondPanel article {
+  color: #fff;
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
+  font-size: 13px;
+  text-align: center;
+}
+article h1 {
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.App {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.home-page {
+  background: #cdbf7a;
+}
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  width: 280px;
+}
+.logo {
+  width: 30px;
+}
+.mobimeMenuIcon {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+}
+.submenu {
+  width: 160px;
+  height: 225px;
+  background: #6f6e6ec9;
+  position: absolute;
+  left: -300px;
+  transition: 1s;
+  padding: 10px;
+  top: 72px;
+  border: 1px solid #cdbf7a;
+  z-index: 11;
+}
+.submenu-active {
+  left: 0px;
+}
+.logo-div {
+  text-align: center;
+}
+.links {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.links a {
+  color: #cdbf7a;
+  text-decoration: none;
+  margin: 10px;
+}
+.fc {
+  color: #cdbf7a;
+}
+.lang-btn-enabled {
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+}
+.fa-sort-down {
+  padding-left: 5px;
+}
+.lang-btn-disabled {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 70px;
+  display: flex;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+.langDiv {
+  display: inline-flex;
+  justify-content: end;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 500px;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+  .firstPanel {
+    margin-top: -47px;
+    height: 79vh;
+    background-position: center;
+    background-size: 1000px;
+  }
+  .firstPanel h1 {
+    font-size: 70px;
+  }
+  article h1 {
+    width: 700px;
+  }
+  .card {
+    width: 210px !important;
+    height: 190px !important;
+  }
+  .card h1 {
+    margin-top: 10px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .firstPanel {
+    height: 67vh;
+    background-size: 850px;
+  }
+  .firstPanel h1 {
+    font-size: 50px;
+  }
+  article h1 {
+    width: 400px;
+    font-size: 18px;
+  }
+  .card {
+    width: 180px !important;
+    height: 190px !important;
+  }
+  .card svg {
+    transform: scale(1) !important;
+  }
+  .card span {
+    position: relative;
+    top: -10px !important;
+  }
+  .card h1 {
+    margin-top: -10px !important;
+  }
+  #footer {
+    padding: 30px !important;
+  }
+  #footer h1 {
+    font-size: 12px !important;
+  }
+  .logo-footer {
+    width: 60px !important;
+  }
+  .langs {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .langPicker {
+    display: flex;
+    justify-content: center;
+  }
+  .lang-btn-enabled {
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+  }
+  .lang-btn-disabled {
+    background: transparent;
+    border: none;
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .lang-btn-enabled > i,
+  .lang-btn-disabled > i {
+    display: none;
+  }
+  .gr .links a {
+    color: #cdbf7a;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-section {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 490px !important;
+  }
+  .secondPanel article {
+    margin-bottom: 20 px;
+  }
+  .card {
+    width: 60% !important;
+    height: auto !important;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .firstPanel {
+    margin-top: -24px;
+    height: 45vh;
+    background-size: 570px;
+  }
+  .firstPanel h1 {
+    font-size: 35px;
+  }
+  article h1 {
+    width: 290px;
+    font-size: 14px;
+  }
+  .card {
+    width: 80% !important;
+    height: auto !important;
+    margin: 15px;
+  }
+  .card h1 {
+    font-size: 1.3em;
+  }
+  .logo-footer {
+    width: 40px !important;
+  }
+  #footer {
+    padding: 10px !important;
+  }
+  #footer h1 {
+    font-size: 10px !important;
+  }
+  #footer div:first-child {
+    margin-top: 15px;
+  }
+}

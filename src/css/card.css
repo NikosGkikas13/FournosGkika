@@ -1,0 +1,24 @@
+.card {
+  width: 280px;
+  height: 240px;
+  box-shadow: 6px 7px 10px 5px #000;
+  background: beige;
+  transition: all 0.5s ease-in-out;
+}
+.card-section {
+  height: 330px;
+}
+.card span {
+  position: relative;
+  top: 15px;
+}
+.card h1 {
+  font-family: monospace;
+  margin-top: 40px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card svg {
+  transform: scale(1.3);
+}

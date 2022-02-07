@@ -1,0 +1,220 @@
+html {
+  scroll-behavior: smooth;
+}
+.about-us-title-div {
+  background-image: url("./../images/aboutus-background.jpg");
+  background-position: center;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /* align-items: end; */
+  flex-direction: column;
+}
+.about-us-title-div h1 {
+  margin: 0;
+  font-size: 80px;
+  font-family: sans-serif;
+  color: #fff;
+}
+.about-us-title-div p {
+  color: #fff;
+  font-family: sans-serif;
+}
+.first-div {
+  width: 100%;
+  text-align: center;
+  padding-left: 600px;
+}
+.more-btn {
+  font-family: sans-serif;
+  background: transparent;
+  color: #cdbf7a;
+  border: 2px solid #cdbf7a;
+  width: 90px;
+  height: 30px;
+  font-size: 20px;
+}
+.more-btn:hover {
+  border: 2px solid #9f9045;
+  color: #9f9045;
+}
+/* .about-section {
+  display: flex;
+}
+.counter,
+.counter-text {
+  width: 50%;
+} */
+.counter {
+  background: rgb(42, 83, 42);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.counterDigit {
+  font-size: 50px;
+}
+.counter-text {
+  text-align: center;
+}
+.third-div {
+  height: 500px;
+}
+.range-div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.range-div input {
+  width: 500px;
+  transform: rotate(90deg);
+}
+.range-div img {
+  height: inherit;
+  width: 100%;
+}
+.range-and-text {
+  position: absolute;
+  display: inline-flex;
+  margin-left: -150px;
+  z-index: 11;
+}
+.range-and-text p {
+  text-align: right;
+  color: #fff;
+}
+.img-container {
+  width: 33%;
+  position: absolute;
+  height: 500px;
+  background: linear-gradient(
+    90deg,
+    rgba(205, 191, 122, 1) 61%,
+    rgba(2, 0, 36, 0) 100%
+  );
+  z-index: 11;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+  opacity: 1;
+  z-index: 9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  background: transparent;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 2px #000000;
+  background: rgb(42, 83, 42);
+  border-radius: 0px;
+  border: 0px solid #ff0000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid rgb(42, 83, 42);
+  height: 19px;
+  width: 19px;
+  border-radius: 25px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: rgb(42, 83, 42);
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgb(42, 83, 42);
+  border-radius: 0px;
+  border: 0px solid #ff0000;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid rgb(42, 83, 42);
+  height: 18px;
+  width: 19px;
+  border-radius: 25px;
+  background: #b0a469;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #000000;
+  border: 0px solid #ff0000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #000000;
+  border: 0px solid #ff0000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #000000;
+  height: 18px;
+  width: 19px;
+  border-radius: 25px;
+  background: #b0a469;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: rgb(42, 83, 42);
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: rgb(42, 83, 42);
+}
+.second-div p,
+.second-div h1 {
+  margin: 0;
+}
+#info-section {
+  text-align: center;
+  padding: 40px;
+}
+#info-section h1 {
+  width: 50%;
+  margin: 0 auto;
+}
+#info-section img {
+  width: 400px;
+}
+.infoDiv {
+  background: #cacaca;
+}
