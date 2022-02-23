@@ -1,13 +1,15 @@
-import React from 'react'
-import './../css/card.css'
+import React from "react";
+import "./../css/card.css";
 
 const card = (props) => {
-    return (
-        <div className="card">
-            <span>{props.icon}</span>
-            <h1>{props.text}</h1>
-        </div>
-    )
-}
+  const cardClass = `card ${props.id % 2 == 0 ? `reverse` : ""}`;
+  return (
+    <div className={cardClass}>
+      {props.icon}
+      <h1>{props.text}</h1>
+      <p>{props.id}</p>
+    </div>
+  );
+};
 
-export default card
+export default card;

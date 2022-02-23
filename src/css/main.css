@@ -31,15 +31,22 @@ article h1 {
   margin: 5px;
   border-bottom: 1px solid #cdbf7a;
   padding-bottom: 6px;
+  align-items: center;
 }
 .footerInfo h1:last-child {
   padding-left: 10px;
 }
 .logo-footer {
-  width: 100px;
+  width: 70px;
 }
 .footerInfo-div {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+}
+.logo-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }

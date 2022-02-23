@@ -8,7 +8,7 @@ const Footer = (props) => {
   var year = date.getFullYear(0);
   return (
     <div id="footer">
-      <div style={{ textAlign: "center" }}>
+      <div className="logo-footer-container">
         <img
           className="logo-footer"
           src={require(`./../images/logo.png`).default}

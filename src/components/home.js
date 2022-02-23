@@ -20,7 +20,7 @@ const Home = (props) => {
           {homecards.map((item) => {
             return (
               <>
-                <Card icon={item.icon} text={item.text} />
+                <Card id={item.id} icon={item.icon} text={item.text} />
               </>
             );
           })}

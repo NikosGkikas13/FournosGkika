@@ -1,24 +1,30 @@
 .card {
-  width: 280px;
-  height: 240px;
-  box-shadow: 6px 7px 10px 5px #000;
-  background: beige;
+  display: flex;
   transition: all 0.5s ease-in-out;
+  align-items: center;
+  margin: 50px;
+  border: 1px solid #cdc7c7;
+  padding: 10px;
 }
-.card-section {
-  height: 330px;
-}
+
 .card span {
   position: relative;
   top: 15px;
 }
 .card h1 {
   font-family: monospace;
-  margin-top: 40px;
+  margin: 50px;
+  width: 350px;
 }
-.card:hover {
+/* .card:hover {
   transform: scale(1.1);
 }
 .card svg {
   transform: scale(1.3);
+} */
+.card img {
+  width: 400px;
+}
+.reverse {
+  flex-direction: row-reverse;
 }
