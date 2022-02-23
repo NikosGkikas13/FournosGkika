@@ -19,6 +19,7 @@ const Footer = (props) => {
         {langFooter.map((item) => {
           return (
             <div className="footerInfo">
+              <img className="contact-icon" src={item.icon} alt="" />
               <h1>{item.text}</h1>
             </div>
           );

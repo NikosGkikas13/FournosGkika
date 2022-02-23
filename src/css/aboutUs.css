@@ -32,13 +32,13 @@ html {
   background: transparent;
   color: #cdbf7a;
   border: 2px solid #cdbf7a;
-  width: 90px;
-  height: 30px;
   font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
 }
 .more-btn:hover {
-  border: 2px solid #9f9045;
-  color: #9f9045;
+  background-color: #cdbf7a;
+  color: #fff;
 }
 /* .about-section {
   display: flex;
@@ -205,7 +205,8 @@ input[type="range"]:focus::-ms-fill-upper {
   margin: 0;
 }
 #info-section {
-  text-align: center;
+  display: flex;
+  align-items: center;
   padding: 40px;
 }
 #info-section h1 {
@@ -216,5 +217,6 @@ input[type="range"]:focus::-ms-fill-upper {
   width: 400px;
 }
 .infoDiv {
-  background: #cacaca;
+  background: #e2e2ed;
+  color: #fff;
 }

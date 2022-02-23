@@ -5,6 +5,7 @@ import Img2 from "../images/home-image.jpg";
 import Img3 from "../images/contact-us-background.png";
 import Img4 from "../images/pexels-maria-orlova-4916562.jpg";
 import axios from "axios";
+import about_photo from "../images/slider/fournos17-min.jpg";
 
 const AboutUs = (props) => {
   const AboutProps = props.propsLang.enabledLang.aboutUs;
@@ -48,9 +49,9 @@ const AboutUs = (props) => {
             {AboutProps.CounterText}
           </h1>
         </div>
-        <div className="counter-text">
+        {/* <div className="counter-text">
           <p></p>
-        </div>
+        </div> */}
       </div>
     );
   };
@@ -110,7 +111,7 @@ const AboutUs = (props) => {
   const InfoSection = (props) => {
     return (
       <section ref={moreRef} id="info-section">
-        {/* <img src={require(`./../images/gj.jpg`).default}/> */}
+        <img src={about_photo} alt="" />
         <h1>{AboutProps.InfoText}</h1>
       </section>
     );

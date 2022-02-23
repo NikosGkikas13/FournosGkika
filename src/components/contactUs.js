@@ -6,6 +6,7 @@ import { useEffect } from "react/cjs/react.development";
 
 const contactUs = (props) => {
   const contactProps = props.propsLang.enabledLang.ContactUs;
+  const info = props.propsLang.enabledLang.main.FooterInfo;
   console.log(contactProps);
 
   const ContactForm = (props) => {
@@ -67,12 +68,11 @@ const contactUs = (props) => {
     //Send message to Email
 
     const containerStyle = {
-      maxWidth: "900px",
+      maxWidth: "1100px",
       height: "385px",
       position: "relative",
       overflow: "hidden",
       margin: "0 auto",
-      marginTop: "80px",
     };
 
     const center = {
@@ -84,17 +84,35 @@ const contactUs = (props) => {
       <>
         <section class="contact-div">
           {/* {messageSend && <h1>hi</h1>} */}
+          <LoadScript googleMapsApiKey="AIzaSyDrJch83-JOZMLC1xFbc3LV1Ilmk0gKsIw">
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={15}
+            >
+              <Marker
+                key="marker_1"
+                position={{
+                  lat: 38.149439829121135,
+                  lng: 23.965424873140197,
+                }}
+              />
+              {/* Child components, such as markers, info windows, etc. */}
+              <></>
+            </GoogleMap>
+          </LoadScript>
 
           <form ref={formRef} class="contact-form" onSubmit={sendEmail}>
+            <h1>{contactProps.contact}</h1>
             <ul class="form-ul">
               <div class="form-div">
                 <li>
                   <label>{contactProps.name}:</label>
-                  <input name="name" type="text" />
+                  <input name="name" type="text" required />
                 </li>
                 <li>
                   <label>{contactProps.email}:</label>
-                  <input name="from_name" type="email" />
+                  <input name="from_name" type="email" required />
                 </li>
               </div>
               <li>
@@ -117,24 +135,19 @@ const contactUs = (props) => {
               {contactProps.btn}
             </button>
           </form>
-
-          <LoadScript googleMapsApiKey="AIzaSyDrJch83-JOZMLC1xFbc3LV1Ilmk0gKsIw">
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={center}
-              zoom={15}
-            >
-              <Marker
-                key="marker_1"
-                position={{
-                  lat: 38.149439829121135,
-                  lng: 23.965424873140197,
-                }}
-              />
-              {/* Child components, such as markers, info windows, etc. */}
-              <></>
-            </GoogleMap>
-          </LoadScript>
+          <div className="location-info-container">
+            <p>{contactProps.location}</p>
+            <ul>
+              {info.map((item, key) => {
+                return (
+                  <div className="location-info-list-item">
+                    <img className="contact-icon" src={item.icon} alt="" />
+                    <li>{item.text}</li>
+                  </div>
+                );
+              })}
+            </ul>
+          </div>
         </section>
       </>
     );
