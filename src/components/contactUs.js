@@ -136,7 +136,7 @@ const contactUs = (props) => {
             </button>
           </form>
           <div className="location-info-container">
-            <p>{contactProps.location}</p>
+            {/* <p>{contactProps.location}</p> */}
             <ul>
               {info.map((item, key) => {
                 return (

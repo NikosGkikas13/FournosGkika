@@ -5,6 +5,7 @@ nav {
   background: #000;
   padding: 20px;
   color: #cdbf7a;
+  font-size: 1.2em;
 }
 nav a {
   color: #cdbf7a;
@@ -36,6 +37,8 @@ nav a {
   position: relative;
   top: 40%;
   z-index: 10;
+  font-family: Alegreya-SemiBoldItalic;
+  font-weight: 300;
 }
 body {
   margin: 0;
@@ -52,15 +55,15 @@ body {
 }
 .secondPanel article {
   color: #fff;
-  border-bottom: 1px solid black;
-  margin-bottom: 40px;
+  /* border-bottom: 1px solid black; */
+  margin-bottom: 30px;
   font-size: 13px;
   text-align: center;
 }
 article h1 {
   width: 900px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .App {
   max-width: 1500px;
@@ -73,7 +76,7 @@ article h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #588088;
+  background: rgb(42, 83, 42);
   color: #fff;
 }
 
@@ -88,7 +91,6 @@ article h1 {
 }
 .submenu {
   width: 160px;
-  height: 225px;
   background: #6f6e6ec9;
   position: absolute;
   left: -300px;
@@ -143,8 +145,7 @@ article h1 {
   display: inline-flex;
   justify-content: end;
   align-items: center;
-  /* flex-wrap: wrap; */
-  width: 500px;
+  width: 600px;
 }
 /* RESPONSIVE */
 
@@ -161,10 +162,7 @@ article h1 {
   article h1 {
     width: 700px;
   }
-  .card {
-    width: 210px !important;
-    height: 190px !important;
-  }
+  
   .card h1 {
     margin-top: 10px !important;
   }
@@ -178,13 +176,10 @@ article h1 {
     font-size: 50px;
   }
   article h1 {
-    width: 400px;
+    width: 500px;
     font-size: 18px;
   }
-  .card {
-    width: 180px !important;
-    height: 190px !important;
-  }
+  
   .card svg {
     transform: scale(1) !important;
   }
@@ -244,15 +239,16 @@ article h1 {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    height: 490px !important;
   }
   .secondPanel article {
     margin-bottom: 20 px;
   }
-  .card {
-    width: 60% !important;
-    height: auto !important;
-    margin: 15px;
+ 
+}
+@media screen and (max-width: 480px) {
+  article h1 {
+    width: 400px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -268,11 +264,7 @@ article h1 {
     width: 290px;
     font-size: 14px;
   }
-  .card {
-    width: 80% !important;
-    height: auto !important;
-    margin: 15px;
-  }
+  
   .card h1 {
     font-size: 1.3em;
   }

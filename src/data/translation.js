@@ -32,17 +32,17 @@ const en = {
       {
         id: 1,
         icon: <img src={bread} alt="" />,
-        text: "Everyday freshly baked bread",
+        text: "The secret of making bread is the passion, which is why every product is kneaded daily using only the purest and healthiest ingredients. In our store you have the opportunity to choose from a variety of breads depending on your preference, from most delicious to healthiest.",
       },
       {
         id: 2,
         icon: <img src={snacks} alt="" />,
-        text: "Start your day with a delicious snack",
+        text: "A rich breakfast is a prerequisite for a good start to the day. Here you will find freshly baked puff pastry, handmade sandwiches and various types of tasty / healthy snacks that you can enjoy at our place or take to work.",
       },
       {
         id: 3,
         icon: <img src={coffee} alt="" />,
-        text: "Combine your snack with a coffee of your choice",
+        text: "Combine your breakfast with your favorite drink. Here you will find a variety of options from hot or cold coffee, chocolate or orange juice from fresh oranges squeezed at that time.",
       },
     ],
     FooterInfo: [
@@ -129,7 +129,7 @@ const gr = {
     },
     {
       id: 3,
-      name: "ΕΠΟΚΟΙΝΩΝΙΑ",
+      name: "ΕΠΙΚΟΙΝΩΝΙΑ",
       path: "/contact-us",
     },
   ],
@@ -140,18 +140,18 @@ const gr = {
     homePageCards: [
       {
         id: 1,
-        icon: <img src={snacks} alt="" />,
-        text: "Καθημερινά φρέσκο ψωμί",
+        icon: <img src={bread} alt="" />,
+        text: "Το μυστικό στον άρτο είναι το μεράκι και η τέχνη, γιαυτό και κάθε αρτοπαρασκεύσμα ζυμώνεται καθημερινά χρησιμοποιώντας τα πιο αγνά και υγιεινά υλικά.Έτσι στο κατάστημά μας έχετε τη δυνατότητα να διαλέξετε ανάμεσα από μία ποικιία ειδών άρτου ανάλογα την προτίμησή σας, από το πιο γευστικό ως το πιο υγιεινό.",
       },
       {
         id: 2,
-        icon: <img src={bread} alt="" />,
-        text: "Ξεκίνα την ημέρα σου με ένα γευστικό σνακ",
+        icon: <img src={snacks} alt="" />,
+        text: "Ένα πλούσιο πρωινό είναι απαραίτηση προϋπόθεση για να ξεκινήσει καλά η ημέρα. Έδώ θα βρείτε φρεσκοψημένες σφολιάτες, χειροποίητα σάντουϊτς και διάφορα είδη γευστικών/υγιεινών σνακ τα οποία μπορείτε να τα απολαύσετε στο χώρο μας ή να τα πάρετε στη δουλειά σας.",
       },
       {
         id: 3,
         icon: <img src={coffee} alt="" />,
-        text: "Συνδύσασε το γεύμα σου με ένα καφέ",
+        text: "Συνδύασε το πρωινό σου με το αγαπημένο σου ρόφημα. Εδώ θα βρεις πληθώρα επιλογών από καφέ ζεστό ή κρύο, σοκολάτα ή χυμό πορτοκάλι από ολόφρεσκα πορτοκάλια στυμμένα εκείνη τη στιγμή.",
       },
     ],
     FooterInfo: [

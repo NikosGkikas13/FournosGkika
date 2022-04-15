@@ -1,14 +1,17 @@
 @font-face {
-  font-family: "BlackOps";
-  src: local("BlackOps"),
-    url(./../fonts/SairaStencilOne-Regular.ttf) format("truetype");
+  font-family: "Alegreya";
+  src: local("Alegreya"),
+    url(./../fonts/Alegreya-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Alegreya-SemiBoldItalic";
+  src: local("Alegreya-SemiBoldItalic"),
+    url(./../fonts/Alegreya-SemiBoldItalic.ttf) format("truetype");
 }
 * {
-  font-family: BlackOps;
+  font-family: Alegreya;
 }
-article h1 {
-  font-family: sans-serif;
-}
+
 #footer {
   background-color: #000;
   color: #cdbf7a;
@@ -23,8 +26,8 @@ article h1 {
 #footer h1 {
   margin: 0;
   font-size: 14px;
-  font-family: sans-serif;
   font-weight: 100;
+  font-size: 1.3em;
 }
 .footerInfo {
   display: flex;

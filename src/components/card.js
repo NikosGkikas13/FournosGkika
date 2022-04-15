@@ -7,7 +7,6 @@ const card = (props) => {
     <div className={cardClass}>
       {props.icon}
       <h1>{props.text}</h1>
-      <p>{props.id}</p>
     </div>
   );
 };
